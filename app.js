@@ -13,6 +13,9 @@ app.use(morgan('dev'))
 const authRoute = require('./app/routes/authRoute')
 app.use(authRoute)
 
+const productRoute = require('./app/routes/productRoute')
+app.use('/api/v1',productRoute)
+
 const port = 3006
 
 app.listen(port, ()=>{

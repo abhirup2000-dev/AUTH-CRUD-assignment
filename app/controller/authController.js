@@ -119,6 +119,7 @@ class userAuthController {
     }
   }
 
+  //user info
   async user(req,res){
     try{
       const user = req.user.id
